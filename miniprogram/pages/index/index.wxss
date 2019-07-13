@@ -1,0 +1,22 @@
+/**index.wxss**/
+
+page {
+}
+.container{
+  margin: 10px;
+}
+.head_img{
+  background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+  width: 100%;
+  height: 20vh;
+  font-size: 40px;
+  color: white;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+.cell_group{
+  width: 80vw;
+}
+.cell_field{
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-button": "/libs/dist/button/index",
+    "van-field": "/libs/dist/field/index",
+    "van-cell": "/libs/dist/cell/index",
+    "van-cell-group": "/libs/dist/cell-group/index"
+
+    }
+}

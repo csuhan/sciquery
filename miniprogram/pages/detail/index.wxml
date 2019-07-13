@@ -1,0 +1,13 @@
+<van-panel>
+  <view slot="header" class="header">
+    <view class="sciname">{{sci.sciname}}</view> 
+  </view>
+  <van-cell-group>
+  <van-cell title="文章数量/年" value="{{sci.pnum}}" border="false" />
+  <van-cell title="近五年平均影响因子" value="{{sci.if5}}" border="false" />
+  <van-cell title="影响因子" value="{{sci.if}}" border="false" />
+  <van-cell title="非自引影响因子" value="{{sci.ifnot}}" border="false" />
+  <van-cell title="期刊名缩写" value="{{sci.scisname}}" border="false" />
+  <van-cell title="ISSN" value="{{sci.issn}}" border="false" />
+  </van-cell-group>
+</van-panel>

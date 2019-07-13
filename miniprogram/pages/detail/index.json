@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-panel": "/libs/dist/panel/index",
+      "van-cell": "/libs/dist/cell/index",
+      "van-cell-group": "/libs/dist/cell-group/index"
+  }
+}

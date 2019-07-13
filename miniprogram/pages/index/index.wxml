@@ -1,0 +1,33 @@
+<!--index.wxml-->
+  <view class='head_img'>
+    <van-cell-group custom-class="cell_group">
+    <van-field
+      custom-class="cell_filed"
+      value="{{ sciname }}"
+      placeholder="期刊名称/首字母/缩写/ISSN"
+      border="{{ false }}"
+      focus="true"
+      bind:change="onValueChange"
+    />
+  </van-cell-group>
+  </view>
+
+<view class="container">
+
+  
+  <view class="btn-area">
+  <van-button type="info" size="large" round="true" bind:click="onClickQuery" loading="{{isQuery}}">查询</van-button>
+  </view>
+
+  <view wx:if="{{sci.length>0}}">
+    <van-cell-group title="共找到{{sci.length}}本期刊">
+      <view wx:for="{{sci}}"wx:for-index="idx" wx:for-item="item" wx:key="idx">
+          <van-cell title="{{item.sciname}}" 
+          value="{{item.if}}"  border="false" 
+          title-width="80%"
+          is-link link-type="navigateTo"
+          url="/pages/detail/index?id={{idx}}"/>
+      </view>
+    </van-cell-group>
+  </view>
+</view>
